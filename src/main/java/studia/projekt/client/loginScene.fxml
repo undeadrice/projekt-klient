@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane style="-fx-background-color: #ffffeb;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <HBox alignment="CENTER" style="-fx-border-color: #eaa211; -fx-border-width: 3;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+               <children>
+                  <Label text="Login">
+                     <font>
+                        <Font name="Bank Gothic Light BT" size="14.0" />
+                     </font></Label>
+                  <Label text="Hasło" textAlignment="CENTER">
+                     <font>
+                        <Font name="Bank Gothic Light BT" size="14.0" />
+                     </font></Label>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="25.0" left="25.0" right="25.0" top="10.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="CENTER" spacing="10.0">
+               <HBox.margin>
+                  <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+               </HBox.margin>
+               <children>
+                  <JFXTextField fx:id="loginFld" alignment="CENTER" onAction="#login" unFocusColor="#eaa211">
+                     <focusColor>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop color="#cd8d18" />
+                              <Stop color="#eaa211" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </focusColor>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="passwordFld" alignment="CENTER" onAction="#login" unFocusColor="#eaa211">
+                     <focusColor>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop color="#cd8d18" />
+                              <Stop color="#eaa211" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </focusColor>
+                  </JFXPasswordField>
+                  <HBox alignment="CENTER" spacing="5.0">
+                     <children>
+                        <JFXButton fx:id="loginBtn" buttonType="RAISED" onAction="#login" ripplerFill="#eaa211" text="Zaloguj" />
+                        <JFXButton fx:id="switchSceneCreateBtn" buttonType="RAISED" onAction="#switchSceneCreate" ripplerFill="#eaa211" text="Utwórz konto" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+   <top>
+      <Label text="Logowanie" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5222222222222223" centerY="0.5" radius="0.8604651162790697">
+               <stops>
+                  <Stop color="#c28a48" />
+                  <Stop color="#5348c2" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+   </top>
+</BorderPane>

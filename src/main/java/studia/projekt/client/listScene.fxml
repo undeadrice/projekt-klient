@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane style="-fx-background-color: #ffffeb; -fx-border-color: #eaa211; -fx-border-width: 3;" stylesheets="@orange.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <TableView fx:id="valueList" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="parameterCol" prefWidth="75.0" text="Parametr" />
+          <TableColumn fx:id="valueCol" prefWidth="75.0" text="Wynik" />
+            <TableColumn fx:id="unitCol" prefWidth="75.0" text="Jednostka" />
+            <TableColumn fx:id="refCol" prefWidth="150.0" text="Wartość referencyjna" />
+        </columns>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </TableView>
+   </center>
+   <left>
+      <ListView fx:id="entryList" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </ListView>
+   </left>
+   <bottom>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" spacing="20.0">
+               <children>
+                  <JFXButton fx:id="addBtn" buttonType="RAISED" onAction="#add" ripplerFill="#eaa211" style="-fx-border-color: #eaa211;" text="Dodaj wpis" />
+                  <JFXButton fx:id="removeBtn" buttonType="RAISED" onAction="#delete" ripplerFill="#eaa211" style="-fx-border-color: #eaa211;" text="Usuń wpis" />
+                  <JFXButton fx:id="editBtn" buttonType="RAISED" onAction="#edit" ripplerFill="#eaa211" style="-fx-border-color: #eaa211;" text="Edytuj wpis" />
+                  <JFXButton fx:id="printBtn" buttonType="RAISED" onAction="#print" ripplerFill="#eaa211" style="-fx-border-color: #eaa211;" text="Drukuj" />
+                  <JFXButton fx:id="logoutBtn" buttonType="RAISED" onAction="#logout" ripplerFill="#eaa211" style="-fx-border-color: #eaa211;" text="Wyloguj" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </bottom>
+</BorderPane>

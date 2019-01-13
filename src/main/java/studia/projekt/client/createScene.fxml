@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane style="-fx-background-color: #ffffeb;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <HBox alignment="CENTER" style="-fx-border-color: #eaa211; -fx-border-width: 3;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" spacing="15.0">
+               <children>
+                  <Label text="Login">
+                     <font>
+                        <Font name="Bank Gothic Light BT" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Hasło">
+                     <font>
+                        <Font name="Bank Gothic Light BT" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Imię">
+                     <font>
+                        <Font name="Bank Gothic Light BT" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Nazwisko">
+                     <font>
+                        <Font name="Bank Gothic Light BT" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="płeć">
+                     <font>
+                        <Font name="Bank Gothic Light BT" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="pesel">
+                     <font>
+                        <Font name="Bank Gothic Light BT" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="40.0" left="25.0" right="25.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="CENTER" spacing="7.0">
+               <children>
+                  <JFXTextField fx:id="createLoginFld" alignment="CENTER" unFocusColor="#eaa211">
+                     <focusColor>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop color="#eaa211" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </focusColor>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="createPasswordFld" unFocusColor="#eaa211">
+                     <focusColor>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop color="#eaa211" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </focusColor>
+                  </JFXPasswordField>
+                  <JFXTextField fx:id="createNameFld" alignment="CENTER" unFocusColor="#eaa211">
+                     <focusColor>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop color="#eaa211" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </focusColor>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="createSurnameFld" alignment="CENTER" unFocusColor="#eaa211">
+                     <focusColor>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop color="#eaa211" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </focusColor>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="createSexFld" alignment="CENTER" unFocusColor="#eaa211">
+                     <focusColor>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop color="#eaa211" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </focusColor>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="CreateCodeFld" alignment="CENTER" unFocusColor="#eaa211">
+                     <focusColor>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop color="#eaa211" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </focusColor>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <HBox alignment="CENTER" spacing="10.0">
+                     <children>
+                        <JFXButton fx:id="createBackBtn" buttonType="RAISED" onAction="#back" ripplerFill="#e8a113" style="-fx-border-color: #eaa211;" text="Wstecz">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="createBtn" buttonType="RAISED" onAction="#createAccount" ripplerFill="#e8a113" style="-fx-border-color: #eaa211;" text="Utwórz">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="35.0" left="25.0" right="25.0" top="25.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+   <top>
+      <Label text="Stwórz konto" BorderPane.alignment="CENTER">
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.8604651162790697">
+               <stops>
+                  <Stop color="#c28a48" />
+                  <Stop color="#5348c2" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </top>
+</BorderPane>
