@@ -1,23 +1,36 @@
 .table-row-cell:selected {
-    -fx-background-color: #eaa211;
+    -fx-background-color: #2213bf;
     -fx-border-color: #eaa211;
     -fx-background-insets: 0;
     -fx-background-radius: 1;
 }
 .table-view:selected {
-    -fx-background-color: #eaa211;
+    -fx-background-color: #2213bf;
     -fx-border-color: #eaa211;
     -fx-background-insets: 0;
     -fx-background-radius: 1;
 }
 .list-cell:selected {
-    -fx-background-color: #eaa211;
+    -fx-background-color: #2213bf;
     -fx-background-insets: 0;
     -fx-background-radius: 1;
 }
 .list-view:selected {
-    -fx-background-color: #eaa211;
+    -fx-background-color: #2213bf;
     -fx-border-color: #eaa211;
     -fx-background-insets: 0;
     -fx-background-radius: 1;
+}
+
+.jfx-decorator {
+    -fx-decorator-color: #2213bf;
+}
+
+.jfx-decorator .jfx-decorator-buttons-container {
+    -fx-background-color: #2213bf;
+}
+
+.jfx-decorator .resize-border {
+    -fx-border-color: -fx-decorator-color;
+    -fx-border-width: 0 2 2 2;
 }

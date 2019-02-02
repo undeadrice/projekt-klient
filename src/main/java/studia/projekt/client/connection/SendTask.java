@@ -4,6 +4,6 @@ import java.io.DataOutputStream;
 
 public interface SendTask {
 	
-	void send(DataOutputStream out);
+	void send(DataOutputStream out, Connection con);
 	
 }

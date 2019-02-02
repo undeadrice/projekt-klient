@@ -11,7 +11,7 @@
 
 <BorderPane style="-fx-background-color: #ffffeb;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <center>
-      <HBox alignment="CENTER" style="-fx-border-color: #eaa211; -fx-border-width: 3;" BorderPane.alignment="CENTER">
+      <HBox alignment="CENTER" style="-fx-border-color: #2213bf; -fx-border-width: 3;" BorderPane.alignment="CENTER">
          <children>
             <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
                <children>
@@ -33,7 +33,7 @@
                   <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
                </HBox.margin>
                <children>
-                  <JFXTextField fx:id="loginFld" alignment="CENTER" onAction="#login" unFocusColor="#eaa211">
+                  <JFXTextField fx:id="loginFld" alignment="CENTER" onAction="#login" unFocusColor="#2213bf">
                      <focusColor>
                         <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
                            <stops>
@@ -43,7 +43,7 @@
                         </RadialGradient>
                      </focusColor>
                   </JFXTextField>
-                  <JFXPasswordField fx:id="passwordFld" alignment="CENTER" onAction="#login" unFocusColor="#eaa211">
+                  <JFXPasswordField fx:id="passwordFld" alignment="CENTER" onAction="#login" unFocusColor="#2213bf">
                      <focusColor>
                         <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
                            <stops>
@@ -72,8 +72,9 @@
          <textFill>
             <RadialGradient centerX="0.5222222222222223" centerY="0.5" radius="0.8604651162790697">
                <stops>
-                  <Stop color="#c28a48" />
-                  <Stop color="#5348c2" offset="1.0" />
+                  <Stop color="#4a82c2" />
+                  <Stop color="#4a82c2" offset="0.007662835249042145" />
+                  <Stop color="#4a82c2" offset="1.0" />
                </stops>
             </RadialGradient>
          </textFill>

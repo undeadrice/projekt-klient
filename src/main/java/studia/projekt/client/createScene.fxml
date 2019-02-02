@@ -10,7 +10,7 @@
 
 <BorderPane style="-fx-background-color: #ffffeb;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <center>
-      <HBox alignment="CENTER" style="-fx-border-color: #eaa211; -fx-border-width: 3;" BorderPane.alignment="CENTER">
+      <HBox alignment="CENTER" style="-fx-border-color: #2213bf; -fx-border-width: 3;" BorderPane.alignment="CENTER">
          <children>
             <VBox alignment="CENTER" spacing="15.0">
                <children>
@@ -51,7 +51,23 @@
             </VBox>
             <VBox alignment="CENTER" spacing="7.0">
                <children>
-                  <JFXTextField fx:id="createLoginFld" alignment="CENTER" unFocusColor="#eaa211">
+                  <JFXTextField fx:id="createLoginFld" alignment="CENTER" focusColor="#4a82c2" unFocusColor="#2213bf">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="createPasswordFld" focusColor="#4a82c2" unFocusColor="#2213bf" />
+                  <JFXTextField fx:id="createNameFld" alignment="CENTER" focusColor="#4a82c2" unFocusColor="#2213bf">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="createSurnameFld" alignment="CENTER" focusColor="#4a82c2" unFocusColor="#2213bf">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="createSexFld" alignment="CENTER" unFocusColor="#4a82c2">
                      <focusColor>
                         <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
                            <stops>
@@ -64,76 +80,19 @@
                         <Insets />
                      </VBox.margin>
                   </JFXTextField>
-                  <JFXPasswordField fx:id="createPasswordFld" unFocusColor="#eaa211">
-                     <focusColor>
-                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
-                           <stops>
-                              <Stop color="#eaa211" />
-                              <Stop color="WHITE" offset="1.0" />
-                           </stops>
-                        </RadialGradient>
-                     </focusColor>
-                  </JFXPasswordField>
-                  <JFXTextField fx:id="createNameFld" alignment="CENTER" unFocusColor="#eaa211">
-                     <focusColor>
-                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
-                           <stops>
-                              <Stop color="#eaa211" />
-                              <Stop color="WHITE" offset="1.0" />
-                           </stops>
-                        </RadialGradient>
-                     </focusColor>
-                     <VBox.margin>
-                        <Insets />
-                     </VBox.margin>
-                  </JFXTextField>
-                  <JFXTextField fx:id="createSurnameFld" alignment="CENTER" unFocusColor="#eaa211">
-                     <focusColor>
-                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
-                           <stops>
-                              <Stop color="#eaa211" />
-                              <Stop color="WHITE" offset="1.0" />
-                           </stops>
-                        </RadialGradient>
-                     </focusColor>
-                     <VBox.margin>
-                        <Insets />
-                     </VBox.margin>
-                  </JFXTextField>
-                  <JFXTextField fx:id="createSexFld" alignment="CENTER" unFocusColor="#eaa211">
-                     <focusColor>
-                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
-                           <stops>
-                              <Stop color="#eaa211" />
-                              <Stop color="WHITE" offset="1.0" />
-                           </stops>
-                        </RadialGradient>
-                     </focusColor>
-                     <VBox.margin>
-                        <Insets />
-                     </VBox.margin>
-                  </JFXTextField>
-                  <JFXTextField fx:id="CreateCodeFld" alignment="CENTER" unFocusColor="#eaa211">
-                     <focusColor>
-                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
-                           <stops>
-                              <Stop color="#eaa211" />
-                              <Stop color="WHITE" offset="1.0" />
-                           </stops>
-                        </RadialGradient>
-                     </focusColor>
+                  <JFXTextField fx:id="createCodeFld" alignment="CENTER" focusColor="#4a82c2" unFocusColor="#2213bf">
                      <VBox.margin>
                         <Insets />
                      </VBox.margin>
                   </JFXTextField>
                   <HBox alignment="CENTER" spacing="10.0">
                      <children>
-                        <JFXButton fx:id="createBackBtn" buttonType="RAISED" onAction="#back" ripplerFill="#e8a113" style="-fx-border-color: #eaa211;" text="Wstecz">
+                        <JFXButton fx:id="createBackBtn" buttonType="RAISED" onAction="#back" ripplerFill="#2213bf" style="-fx-border-color: #2213bf;" text="Wstecz">
                            <HBox.margin>
                               <Insets top="10.0" />
                            </HBox.margin>
                         </JFXButton>
-                        <JFXButton fx:id="createBtn" buttonType="RAISED" onAction="#createAccount" ripplerFill="#e8a113" style="-fx-border-color: #eaa211;" text="Utwórz">
+                        <JFXButton fx:id="createBtn" buttonType="RAISED" onAction="#createAccount" ripplerFill="#2213bf" style="-fx-border-color: #2213bf;" text="Utwórz">
                            <HBox.margin>
                               <Insets top="10.0" />
                            </HBox.margin>
@@ -156,8 +115,8 @@
          <textFill>
             <RadialGradient centerX="0.5" centerY="0.5" radius="0.8604651162790697">
                <stops>
-                  <Stop color="#c28a48" />
-                  <Stop color="#5348c2" offset="1.0" />
+                  <Stop color="#4a82c2" />
+                  <Stop color="#4a82c2" offset="1.0" />
                </stops>
             </RadialGradient>
          </textFill>

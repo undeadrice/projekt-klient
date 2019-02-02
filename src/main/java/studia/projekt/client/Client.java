@@ -18,6 +18,9 @@ import studia.projekt.client.controller.LoginController;
 
 public class Client extends Application {
 
+	public static final int PORT = 8080;
+	public static final String HOST = "127.0.0.7";
+
 	public static void main(String[] args) {
 		launch(args);
 	}
@@ -31,6 +34,7 @@ public class Client extends Application {
 	public void init(Stage stage) throws IOException {
 		Connection con = new Connection();
 		connectionTest(con);
+	
 
 		LoginController loginController = new LoginController();
 
@@ -41,9 +45,9 @@ public class Client extends Application {
 
 		JFXDecorator decorator = new JFXDecorator(stage, root);
 		decorator.setCustomMaximize(true);
-		
-		Scene scene = new Scene(decorator,640,480);
-		
+
+		Scene scene = new Scene(decorator, 640, 480);
+
 		String uri = Client.class.getResource("orange.css").toExternalForm();
 		scene.getStylesheets().add(uri);
 
@@ -53,10 +57,18 @@ public class Client extends Application {
 		stage.show();
 
 	}
-	
+
 	public void connectionTest(Connection con) {
 		try {
 			con.connect("127.0.0.7", 8080);
+//			Thread.sleep(1000);
+//			con.disconnect();
+//			Thread.sleep(1000);
+//			con.connect(HOST, PORT);
+//			Thread.sleep(1000);
+//			con.disconnect();
+//			Thread.sleep(1000);
+//			con.connect(HOST, PORT);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

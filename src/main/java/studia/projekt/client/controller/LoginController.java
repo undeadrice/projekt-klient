@@ -11,6 +11,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.stage.Stage;
 import studia.projekt.client.Client;
+import studia.projekt.client.connection.Bundle;
 import studia.projekt.client.connection.Connection;
 
 public class LoginController {
@@ -32,6 +33,7 @@ public class LoginController {
 		this.stage = stage;
 		this.connection = connection;
 		this.decorator = decorator;
+		connection.setOwnerController(this);
 	}
 	
 
@@ -39,15 +41,14 @@ public class LoginController {
 	
 	@FXML
 	private void login() throws IOException {
-		switchSceneList();
-		System.out.println(loginFld.getText());
-		System.out.println(passwordFld.getText());
-		
-		
+		Bundle b = new Bundle(Connection.loginByte);
+		b.putString("login", loginFld.getText());
+		b.putString("password", passwordFld.getText());
+		connection.send(b);
 	}
 	
 	@FXML
-	private void switchSceneCreate() throws IOException {
+	public void switchSceneCreate() throws IOException {
 		
 		CreateController createController = new CreateController();
 		createController.init(stage,decorator,connection);
@@ -64,7 +65,7 @@ public class LoginController {
 
 	}
 	@FXML
-	private void switchSceneList() throws IOException {
+	public void switchSceneList() throws IOException {
 		
 		ListController listController = new ListController();
 		listController.init(stage,decorator,connection);
@@ -80,5 +81,7 @@ public class LoginController {
 	
 
 	}
+	
+
 
 }
