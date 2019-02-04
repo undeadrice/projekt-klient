@@ -67,6 +67,39 @@ public class MeasurementEntry {
 		this.date = date;
 	}
 
+	public void setParameter(String paramName, double val) {
+		switch (paramName) {
+		case "Leukocyty":
+			setLeukocyte(val);
+			break;
+		case "Erytrocyty":
+			setErythrocyte(val);
+			break;
+		case "Hemoglobina":
+			setHemoglobin(val);
+			break;
+		case "Hematokryt":
+			setHematocrit(val);
+			break;
+		case "MCV":
+			setMcv(val);
+			break;
+		case "MCH":
+			setMch(val);
+			break;
+		case "MCHC":
+			setMchc(val);
+			break;
+		case "Płytki krwi":
+			setPlatelets(val);
+			break;
+		case "Limfocyty":
+			setLymphocyte(val);
+			break;
+
+		}
+	};
+
 	public Integer getAccountId() {
 		return accountId;
 	}

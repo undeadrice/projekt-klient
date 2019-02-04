@@ -17,8 +17,13 @@ import studia.projekt.client.connection.Connection;
 import studia.projekt.client.controller.LoginController;
 
 public class Client extends Application {
-
+	/**
+	 * port na którym uruchomiony jest serwer
+	 */
 	public static final int PORT = 8080;
+	/**
+	 * adres hosta
+	 */
 	public static final String HOST = "127.0.0.7";
 
 	public static void main(String[] args) {
@@ -31,10 +36,17 @@ public class Client extends Application {
 
 	}
 
+	/**
+	 * uruchomienie głównego okna i załadowanie strony logowania
+	 * 
+	 * @param stage
+	 * @throws IOException
+	 */
 	public void init(Stage stage) throws IOException {
+		// nowy obiekt connection, połączenie następuje dopiero podczas logowania /
+		// tworzenia konta
 		Connection con = new Connection();
 		connectionTest(con);
-	
 
 		LoginController loginController = new LoginController();
 
@@ -47,7 +59,6 @@ public class Client extends Application {
 		decorator.setCustomMaximize(true);
 
 		Scene scene = new Scene(decorator, 640, 480);
-
 		String uri = Client.class.getResource("orange.css").toExternalForm();
 		scene.getStylesheets().add(uri);
 
@@ -60,15 +71,7 @@ public class Client extends Application {
 
 	public void connectionTest(Connection con) {
 		try {
-			con.connect("127.0.0.7", 8080);
-//			Thread.sleep(1000);
-//			con.disconnect();
-//			Thread.sleep(1000);
-//			con.connect(HOST, PORT);
-//			Thread.sleep(1000);
-//			con.disconnect();
-//			Thread.sleep(1000);
-//			con.connect(HOST, PORT);
+			con.connect(HOST, PORT);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
